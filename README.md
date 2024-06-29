@@ -11,6 +11,17 @@ This method bypasses restrictions but will become ineffective after the device r
 -   Xcode is installed and run at least once.
 -   SIP debugging restrictions are disabled (via `csrutil enable --without debug` command in recovery mode).
 
+# Usage
+
+You can find the executable in the release page.
+If you want to build it yourself, please refer to the build section.
+
+You should run this executable as root.
+
+```bash
+sudo ./xllmu
+```
+
 # Build
 
 -   Clone the repository.
@@ -35,12 +46,4 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 
 ```bash
 make
-```
-
-# Usage
-
-You should run this executable as root.
-
-```bash
-sudo ./xllmu
 ```
